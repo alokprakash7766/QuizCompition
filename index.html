@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Quiz Competition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz Competition</h2>
+
+        <!-- Student Details Form -->
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="text" id="rollno" placeholder="Enter Roll No" required>
+            <input type="text" id="semester" placeholder="Enter Semester" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="text" id="mobile" placeholder="Enter Mobile Number" required>
+            
+            <!-- CAPTCHA Section -->
+            <div id="captchaSection">
+                <label for="captcha">Enter the number shown:</label>
+                <div id="captchaText" style="font-size: 20px; font-weight: bold;"></div>
+                <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required>
+            </div>
+
+            <button type="button" onclick="startQuiz()">Start Quiz</button>
+        </form>
+
+        <!-- Quiz Questions -->
+        <div id="quizForm" class="hidden">
+            <div id="quizContainer"></div>
+            <button id="showResult" class="hidden" onclick="showResult()">Show Result</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="resultSection" class="hidden"></div>
+
+        <!-- Feedback Button -->
+        <div id="feedbackButtonSection" class="hidden">
+            <a href="feedback.html">
+                <button>Give Feedback</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

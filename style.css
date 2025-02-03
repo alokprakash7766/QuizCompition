@@ -1,0 +1,44 @@
+
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  .container {
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+  }
+  input, button, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+  }
+  button {
+      background: #ff6f61;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      width: 150px;
+      transition: background-color 0.3s, transform 0.2s ease;
+  }
+
+  button:hover {
+      background-color: #1cb46a;
+      transform: translateY(-2px);
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  textarea {
+      height: 100px;
+  }
